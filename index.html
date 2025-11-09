@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberShield Matrix</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff41;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px #00ff41;
+    }
+
+    header p {
+      color: #00ff41aa;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 0 0 10px #00ff41;
+    }
+
+    .cert-grid, .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .cert-card, .blog-card {
+      border: 2px solid #00ff41;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #001900;
+      transition: 0.3s;
+    }
+
+    .cert-card:hover, .blog-card:hover {
+      box-shadow: 0 0 20px #00ff41;
+      transform: scale(1.03);
+    }
+
+    .cert-card img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #00ff41;
+      color: #00ff41aa;
+    }
+
+    .matrix-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url('https://i.imgur.com/7yH5zZZ.gif') center/cover;
+      opacity: 0.2;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 40px auto 0 auto;
+    }
+
+    input, textarea {
+      background-color: #001900;
+      color: #00ff41;
+      border: 2px solid #00ff41;
+      border-radius: 8px;
+      padding: 10px;
+      font-family: 'Courier New', monospace;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ff41;
+    }
+
+    button {
+      background-color: #00ff41;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00cc33;
+      box-shadow: 0 0 10px #00ff41;
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix-bg"></div>
+
+  <header>
+    <h1>CyberShield Matrix</h1>
+    <p>Ethical Hacking • Cybersecurity • Research</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      I'm a cybersecurity specialist passionate about ethical hacking, penetration testing, and building secure systems. 
+      Welcome to my digital space where I share projects, certifications, and insights into the world of cyber defense.
+    </p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="https://www.hackthebox.com/images/htb_logo.png" alt="HTB">
+        <h3>CPTS - Hack The Box</h3>
+        <p>Certified Penetration Testing Specialist • 2025</p>
+      </div>
+      <div class="cert-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/CEH_cert_logo.png" alt="CEH">
+        <h3>CEH - Certified Ethical Hacker</h3>
+        <p>EC-Council • 2024</p>
+      </div>
+      <div class="cert-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/CompTIA_logo.svg" alt="CompTIA">
+        <h3>CompTIA Security+</h3>
+        <p>Core cybersecurity certification • 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Cybersecurity Blog</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>Setting Up a Red Team Lab with Proxmox</h3>
+        <p>Learn how to deploy and configure a virtualized Red Team environment using Proxmox and Sliver C2.</p>
+        <p><em>Posted: Nov 2025</em></p>
+      </div>
+      <div class="blog-card">
+        <h3>Bypassing NLA in RDP Exploitation</h3>
+        <p>A walkthrough explaining TLS levels and Network Level Authentication in xfreerdp connections.</p>
+        <p><em>Posted: Oct 2025</em></p>
+      </div>
+      <div class="blog-card">
+        <h3>Advanced Persistence with PowerShell</h3>
+        <p>Techniques to establish stealthy persistence on Windows environments using scheduled tasks and PowerShell payloads.</p>
+        <p><em>Posted: Sept 2025</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mayvlxyz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; color:#00ff41aa; margin-top:20px;">Or email me directly at <strong>contact@pornhack.me</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 CyberShield Matrix | Built by dade</p>
+  </footer>
+</body>
+</html>
