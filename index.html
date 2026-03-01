@@ -2,198 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Davide "null0x" Vesentini</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #00ff41;
-      font-family: 'Courier New', monospace;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KrazePlanet</title>
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 20px #00ff41;
-    }
-
-    header p {
-      color: #00ff41aa;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      text-shadow: 0 0 10px #00ff41;
-    }
-
-    .cert-grid, .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .cert-card, .blog-card {
-      border: 2px solid #00ff41;
-      border-radius: 10px;
-      padding: 20px;
-      background-color: #001900;
-      transition: 0.3s;
-    }
-
-    .cert-card:hover, .blog-card:hover {
-      box-shadow: 0 0 20px #00ff41;
-      transform: scale(1.03);
-    }
-
-    .cert-card img {
-      width: 60px;
-      display: block;
-      margin: 0 auto 15px auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      border-top: 1px solid #00ff41;
-      color: #00ff41aa;
-    }
-
-    .matrix-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: url('https://i.imgur.com/7yH5zZZ.gif') center/cover;
-      opacity: 0.2;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: 40px auto 0 auto;
-    }
-
-    input, textarea {
-      background-color: #001900;
-      color: #00ff41;
-      border: 2px solid #00ff41;
-      border-radius: 8px;
-      padding: 10px;
-      font-family: 'Courier New', monospace;
-    }
-
-    input:focus, textarea:focus {
-      outline: none;
-      box-shadow: 0 0 10px #00ff41;
-    }
-
-    button {
-      background-color: #00ff41;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #00cc33;
-      box-shadow: 0 0 10px #00ff41;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="matrix-bg"></div>
 
-  <header>
-    <h1>Davide "null0x" Vesentini</h1>
-    <p>Ethical Hacking • Cybersecurity • Research</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      I'm an italian law enforcement member and cybersecurity specialist passionate about ethical hacking, penetration testing, and building secure systems. 
-      Welcome to my digital space where I share projects, certifications, and insights into the world of cyber defense.
-    </p>
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="glitch">KRAZEPLANET</h1>
+    <p class="terminal" id="typing"></p>
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <img src="https://www.credly.com/badges/5915f78a-f3d3-4657-8579-9ad6e287b2c4/public_url" alt="HTB">
-        <h3>CPTS - Hack The Box</h3>
-        <p>Certified Penetration Testing Specialist • 2025</p>
-      </div>
-      <div class="cert-card">
-        <img src="https://labs.cyberwarfare.live/credential/certificate/68471d9a4a4ed43e5ae9c52c" alt="CEH">
-        <h3>CRTA - CyberWarfare Labs</h3>
-        <p>Certified Red Team Analyst • 2025</p>
-      </div>
-      <div class="cert-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/CompTIA_logo.svg" alt="CompTIA">
-        <h3>CompTIA Security+</h3>
-        <p>Core cybersecurity certification • 2023</p>
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>ABOUT ME</h2>
+
+    <div class="card">
+      <p>
+        Web developer & hacker-minded builder.  
+        I craft clean, fast and sharp digital experiences.  
+        Code is my weapon.
+      </p>
+
+      <div class="skills">
+        <div class="skill"><span>HTML</span><div class="bar" style="width:90%"></div></div>
+        <div class="skill"><span>CSS</span><div class="bar" style="width:85%"></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar" style="width:80%"></div></div>
+        <div class="skill"><span>React</span><div class="bar" style="width:75%"></div></div>
       </div>
     </div>
   </section>
 
-  <section id="blog">
-    <h2>Cybersecurity Blog</h2>
-    <div class="blog-grid">
-      <div class="blog-card">
-        <h3>Setting Up a Red Team Lab with Proxmox</h3>
-        <p>Learn how to deploy and configure a virtualized Red Team environment using Proxmox and Sliver C2.</p>
-        <p><em>Posted: Nov 2025</em></p>
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2>MY PROJECTS</h2>
+
+    <div class="projects">
+      <div class="project">
+        <h3>Neon Site</h3>
+        <p>Cyberpunk landing page</p>
+        <a href="#">View</a>
       </div>
-      <div class="blog-card">
-        <h3>Bypassing NLA in RDP Exploitation</h3>
-        <p>A walkthrough explaining TLS levels and Network Level Authentication in xfreerdp connections.</p>
-        <p><em>Posted: Oct 2025</em></p>
+
+      <div class="project">
+        <h3>Hacker Tool</h3>
+        <p>Pentesting utility</p>
+        <a href="#">View</a>
       </div>
-      <div class="blog-card">
-        <h3>Advanced Persistence with PowerShell</h3>
-        <p>Techniques to establish stealthy persistence on Windows environments using scheduled tasks and PowerShell payloads.</p>
-        <p><em>Posted: Sept 2025</em></p>
+
+      <div class="project">
+        <h3>AI Dashboard</h3>
+        <p>Data analytics platform</p>
+        <a href="#">View</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mayvlxyz" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <!-- CONTACT -->
+  <section class="section">
+    <h2>CONTACT ME</h2>
+
+    <form class="card">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" rows="4"></textarea>
+      <button type="submit">SEND MESSAGE</button>
     </form>
-    <p style="text-align:center; color:#00ff41aa; margin-top:20px;">Or email me directly at <strong>contact@pornhack.me</strong></p>
   </section>
 
   <footer>
-    <p>© 2025 CyberShield Matrix | Built by dade</p>
+    <p>© 2026 KrazePlanet</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
