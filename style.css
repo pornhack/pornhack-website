@@ -1,0 +1,134 @@
+:root {
+  --bg: #000000;
+  --green: #39ff14;
+  --green-soft: rgba(57, 255, 20, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--green);
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.glitch {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  text-shadow:
+    0 0 5px var(--green),
+    0 0 20px var(--green);
+}
+
+.terminal {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* CARD */
+.card {
+  border: 1px solid var(--green);
+  padding: 25px;
+  box-shadow: 0 0 15px var(--green-soft);
+}
+
+/* SKILLS */
+.skills {
+  margin-top: 20px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bar {
+  height: 6px;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid var(--green);
+  padding: 20px;
+  box-shadow: 0 0 10px var(--green-soft);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--green);
+  text-decoration: none;
+  border: 1px solid var(--green);
+  padding: 5px 10px;
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #000;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--green);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
